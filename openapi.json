@@ -1,0 +1,30 @@
+{
+  
+  {
+    "title": "TestRail API",
+    "description": "API for interacting with TestRail.",
+    "termsOfService": "https://www.gurock.com/testrail/terms",
+    "contact": {
+      "name": "TestRail Support",
+      "url": "https://www.gurock.com/testrail/support",
+      "email": "contact@gurock.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/gurock/testrail-api/blob/master/license.md"
+    },
+    "version": "2",
+    "servers": [
+      {
+        "url": "{testrailUrl}/index.php?/api/v2/",
+        "description": "The production API server",
+        "variables": {
+          "testrailUrl": {
+            "default": "http://localhost/testrail/",
+            "description": "This value is the URL for a TestRail instance, such as 'https://example.testrail.io', or 'http://localhost/testrail/'"
+          }
+        }
+      }
+    ]
+  }
+}
