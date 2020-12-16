@@ -204,6 +204,7 @@ public class APIClient
 		else	// GET request
 		{
 			conn.addRequestProperty("Content-Type", "application/json");
+			conn.addRequestProperty("x-api-ident", "beta");
 		}
 		
 		// Execute the actual web request (if it wasn't already initiated
