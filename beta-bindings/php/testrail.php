@@ -97,7 +97,8 @@ class TestRailAPIClient
                 CURLOPT_URL => $this->_url . $uri,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_HTTPHEADER => array (
-                    'Content-Type: application/json')
+                    'Content-Type: application/json',
+                    'x-api-ident: beta')
         ));
         if ($method == 'POST')
         {
