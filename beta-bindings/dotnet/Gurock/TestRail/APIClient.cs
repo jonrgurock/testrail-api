@@ -116,6 +116,7 @@ namespace Gurock.TestRail
             );
 
             request.Headers.Add("Authorization", "Basic " + auth);
+            request.Headers.Add("x-api-ident", "beta");
 
             if (method == "POST")
             {
