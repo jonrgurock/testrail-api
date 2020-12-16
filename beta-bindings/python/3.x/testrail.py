@@ -76,6 +76,7 @@ class APIClient:
                 response = requests.post(url, headers=headers, data=payload)
         else:
             headers['Content-Type'] = 'application/json'
+            headers['x-api-ident'] = 'beta'
             response = requests.get(url, headers=headers)
 
         if response.status_code > 201:
