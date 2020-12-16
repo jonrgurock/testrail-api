@@ -1,7 +1,7 @@
 TestRail API BETA bindings 
 --------------------------
 
-This repository contains alternate versions of TestRail bindings. These versions utilize an x-api-ident header for accessing beta endpoints and pagination, released with TestRail 6.7.
+This repository contains alternate versions of TestRail bindings. These versions utilize an x-api-ident header for accessing beta endpoints and pagination, released with TestRail 6.7. These bindings will only be useful for teams using TestRail 6.7.X and any subsequent releases prior to February 2021.
 
 You can learn more about this release here:
 
