@@ -93,6 +93,7 @@ module TestRail
 			else
 				request = Net::HTTP::Get.new(url.path + '?' + url.query)
 				request["Content-Type"] = "application/json"
+				request["x-api-ident"] = "beta"
 			end
 			request.basic_auth(@user, @password)
 
